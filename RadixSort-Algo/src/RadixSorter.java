@@ -25,7 +25,7 @@ public class RadixSorter {
         radixSort(uppercaseArray, 26);
         radixSort(lowercaseArray, 26);
 
-        return new String(digitArray) + new String(uppercaseArray) + new String(lowercaseArray);
+        return new String(lowercaseArray) + new String(uppercaseArray) + new String(digitArray);
     }
 
     private char[] listToCharArray(List<Character> list) {
