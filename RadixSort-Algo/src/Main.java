@@ -1,10 +1,13 @@
+import static java.lang.System.*;
+
 public class Main {
     public static void main(String[] args) {
-        String input = "a1B2c3A4D5e6F7g8H9i0J";
+        var input = "a1B2c3A4D5e6F7g8H9i0J";
 
-        RadixSorter sorter = new RadixSorter();
+        var sorter = new RadixSorter();
+        var sortedOutput = sorter.sort(input);
 
-        System.out.println("Original String: " + input);
-        System.out.println("Sorted String: " + Output);
+        out.println("Original String: " + input);
+        out.println("Sorted String: " + sortedOutput);
     }
 }
